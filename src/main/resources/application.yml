@@ -10,3 +10,11 @@ spring:
         jwt:
           issuer-uri: http://localhost:8080/realms/dev
           jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+
+keycloak:
+  realm: dev
+  domain: http://localhost:9081
+  client-ids:
+    rest-client: admin-cli
+    token: generate_token_dev
+  client-secret: t4zOUwnAzsfZKHsr3QiDMh5QLWyb7s50
